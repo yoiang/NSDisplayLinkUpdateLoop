@@ -3,7 +3,7 @@
    LastUpgradeVersion = "0460"
    version = "1.3">
    <BuildAction
-      parallelizeBuildables = "YES"
+      parallelizeBuildables = "NO"
       buildImplicitDependencies = "YES">
    </BuildAction>
    <TestAction
@@ -16,13 +16,22 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3CD3B6751789573F00AC3134"
-               BuildableName = "NSDisplayLinkUpdateLoopTest.octest"
-               BlueprintName = "NSDisplayLinkUpdateLoopTest"
+               BlueprintIdentifier = "3C8E4780178A1C7B002077B4"
+               BuildableName = "NSDisplayLinkUpdateLoopTest_CommandLine.octest"
+               BlueprintName = "NSDisplayLinkUpdateLoopTest_CommandLine"
                ReferencedContainer = "container:NSDisplayLinkUpdateLoopDemo.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "3CDC0EC01788B9F700545601"
+            BuildableName = "NSDisplayLinkUpdateLoopDemo.app"
+            BlueprintName = "NSDisplayLinkUpdateLoopDemo"
+            ReferencedContainer = "container:NSDisplayLinkUpdateLoopDemo.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"

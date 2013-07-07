@@ -13,52 +13,7 @@
 #import "Expecta.h"
 #import "OCMock.h"
 
-SpecBegin( NSDisplayLinkUpdateLoop )
-
-describe( @"Lifetime", ^{
-    __block NSDisplayLinkUpdateLoop* displayLink;
-    
-    beforeEach(^{
-        displayLink = [ [ NSDisplayLinkUpdateLoop alloc ] init ];
-    });
-    
-    it(@"init", ^{
-        expect( displayLink ).notTo.equal( nil );
-        expect( [ displayLink self ] ).notTo.equal( nil );
-    });
-    
-    afterEach(^{
-        [ displayLink release ];
-    });
-});
-
-describe( @"Ownership", ^{
-    __block NSDisplayLinkUpdateLoop* displayLink;
-    
-    beforeEach(^{
-        displayLink = [ [ NSDisplayLinkUpdateLoop alloc ] init ];
-    });
-    
-    it(@"init", ^{
-        expect( [ displayLink retainCount ] == 1 );
-    });
-    
-    it(@"start", ^{
-        [ displayLink start ];
-        expect( [ displayLink retainCount ] > 1 );
-        [ displayLink stop ];
-    });
-    
-    it(@"stop", ^{
-        [ displayLink start ];
-        [ displayLink stop ];
-        expect( [ displayLink retainCount ] == 1 );
-    });
-    
-    afterEach(^{
-        [ displayLink release ];
-    });
-});
+SpecBegin( NSDisplayLinkUpdateLoop_NeedScreen )
 
 // TODO: test for existance of race conditions (there shouldn't be any!)
 describe( @"Subscription", ^{
@@ -164,6 +119,5 @@ describe( @"StartAndStop", ^{
         [ displayLink release ];
     });
 });
- 
 
 SpecEnd

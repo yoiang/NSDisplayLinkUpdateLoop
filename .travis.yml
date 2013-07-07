@@ -1,3 +1,4 @@
 language: objective-c
-before_install:
-  - cd NSDisplayLinkUpdateLoopDemo
+
+before_script: travis-ci/before.sh
+script: travis-ci/script.sh
