@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "NSDisplayLinkUpdateLoop"
-  s.version      = "1.0"
+  s.version      = "1.0.1"
   s.summary      = "A simple Objective-C object providing high speed frame update notification."
   s.homepage     = "https://github.com/yoiang/NSDisplayLinkUpdateLoop"
   s.license      = 'MIT'
