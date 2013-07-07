@@ -163,7 +163,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = Adorkable;
 			};
-			buildConfigurationList = 3CDC0EBC1788B9F700545601 /* Build configuration list for PBXProject "NSDisplayLinkUpdateLoop" */;
+			buildConfigurationList = 3CDC0EBC1788B9F700545601 /* Build configuration list for PBXProject "NSDisplayLinkUpdateLoopDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -311,7 +311,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3CDC0EBC1788B9F700545601 /* Build configuration list for PBXProject "NSDisplayLinkUpdateLoop" */ = {
+		3CDC0EBC1788B9F700545601 /* Build configuration list for PBXProject "NSDisplayLinkUpdateLoopDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3CDC0EE51788B9F700545601 /* Debug */,
