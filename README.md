@@ -2,7 +2,7 @@
 
 NSDisplayLinkUpdateLoop is a simple object providing notification from your application whenever the screen is updated.
 
-This simplifies building your own update loops and provides a higher level of precision than an NSTimer ([aside](http://fabiensanglard.net/doomIphone/index.php): a neat read by Fabien Sanglard about an issue with NSTimer and his alternative workaround).
+This simplifies building your own update loops, provides a higher level of precision than an NSTimer and allows syncronization with screen updates ([aside](http://fabiensanglard.net/doomIphone/index.php): a neat read by Fabien Sanglard about an issue with NSTimer and his alternative workaround).
 
 To use NSDisplayLinkUpdateLoop first have your object inherit and implement the NSDisplayLinkUpdateLoopDelegate interface
 
