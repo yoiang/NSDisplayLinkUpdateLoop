@@ -1,0 +1,335 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3CDC0EC51788B9F700545601 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDC0EC41788B9F700545601 /* UIKit.framework */; };
+		3CDC0EC71788B9F700545601 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDC0EC61788B9F700545601 /* Foundation.framework */; };
+		3CDC0EC91788B9F700545601 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDC0EC81788B9F700545601 /* CoreGraphics.framework */; };
+		3CDC0ECF1788B9F700545601 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3CDC0ECD1788B9F700545601 /* InfoPlist.strings */; };
+		3CDC0ED11788B9F700545601 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDC0ED01788B9F700545601 /* main.m */; };
+		3CDC0ED51788B9F700545601 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDC0ED41788B9F700545601 /* AppDelegate.m */; };
+		3CDC0ED71788B9F700545601 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CDC0ED61788B9F700545601 /* Default.png */; };
+		3CDC0ED91788B9F700545601 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CDC0ED81788B9F700545601 /* Default@2x.png */; };
+		3CDC0EDB1788B9F700545601 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CDC0EDA1788B9F700545601 /* Default-568h@2x.png */; };
+		3CDC0EDE1788B9F700545601 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDC0EDD1788B9F700545601 /* ViewController.m */; };
+		3CDC0EE11788B9F700545601 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CDC0EDF1788B9F700545601 /* ViewController.xib */; };
+		3CDC0EED1788BA3100545601 /* NSDisplayLinkUpdateLoop.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDC0EEC1788BA3100545601 /* NSDisplayLinkUpdateLoop.m */; };
+		3CDC0EF41788C4AE00545601 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDC0EEE1788C3E800545601 /* QuartzCore.framework */; };
+		3CDC0EF71788CFAD00545601 /* UpdateLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDC0EF61788CFAD00545601 /* UpdateLabelViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3CDC0EC11788B9F700545601 /* NSDisplayLinkUpdateLoopDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSDisplayLinkUpdateLoopDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CDC0EC41788B9F700545601 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3CDC0EC61788B9F700545601 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3CDC0EC81788B9F700545601 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3CDC0ECC1788B9F700545601 /* NSDisplayLinkUpdateLoopDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NSDisplayLinkUpdateLoopDemo-Info.plist"; sourceTree = "<group>"; };
+		3CDC0ECE1788B9F700545601 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3CDC0ED01788B9F700545601 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3CDC0ED21788B9F700545601 /* NSDisplayLinkUpdateLoopDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDisplayLinkUpdateLoopDemo-Prefix.pch"; sourceTree = "<group>"; };
+		3CDC0ED31788B9F700545601 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3CDC0ED41788B9F700545601 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3CDC0ED61788B9F700545601 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3CDC0ED81788B9F700545601 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3CDC0EDA1788B9F700545601 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3CDC0EDC1788B9F700545601 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3CDC0EDD1788B9F700545601 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3CDC0EE01788B9F700545601 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		3CDC0EEB1788BA3100545601 /* NSDisplayLinkUpdateLoop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDisplayLinkUpdateLoop.h; sourceTree = "<group>"; };
+		3CDC0EEC1788BA3100545601 /* NSDisplayLinkUpdateLoop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDisplayLinkUpdateLoop.m; sourceTree = "<group>"; };
+		3CDC0EEE1788C3E800545601 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3CDC0EF01788C46300545601 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		3CDC0EF21788C47000545601 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3CDC0EF51788CFAD00545601 /* UpdateLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateLabelViewController.h; sourceTree = "<group>"; };
+		3CDC0EF61788CFAD00545601 /* UpdateLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateLabelViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CDC0EBE1788B9F700545601 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CDC0EF41788C4AE00545601 /* QuartzCore.framework in Frameworks */,
+				3CDC0EC91788B9F700545601 /* CoreGraphics.framework in Frameworks */,
+				3CDC0EC51788B9F700545601 /* UIKit.framework in Frameworks */,
+				3CDC0EC71788B9F700545601 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3CDC0EB81788B9F700545601 = {
+			isa = PBXGroup;
+			children = (
+				3CDC0EF21788C47000545601 /* AVFoundation.framework */,
+				3CDC0EF01788C46300545601 /* CoreVideo.framework */,
+				3CDC0EEE1788C3E800545601 /* QuartzCore.framework */,
+				3CDC0EEA1788BA2200545601 /* NSDisplayLinkUpdateLoop */,
+				3CDC0ECA1788B9F700545601 /* NSDisplayLinkUpdateLoopDemo */,
+				3CDC0EC31788B9F700545601 /* Frameworks */,
+				3CDC0EC21788B9F700545601 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3CDC0EC21788B9F700545601 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CDC0EC11788B9F700545601 /* NSDisplayLinkUpdateLoopDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CDC0EC31788B9F700545601 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CDC0EC41788B9F700545601 /* UIKit.framework */,
+				3CDC0EC61788B9F700545601 /* Foundation.framework */,
+				3CDC0EC81788B9F700545601 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3CDC0ECA1788B9F700545601 /* NSDisplayLinkUpdateLoopDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3CDC0ED31788B9F700545601 /* AppDelegate.h */,
+				3CDC0ED41788B9F700545601 /* AppDelegate.m */,
+				3CDC0EDC1788B9F700545601 /* ViewController.h */,
+				3CDC0EDD1788B9F700545601 /* ViewController.m */,
+				3CDC0EDF1788B9F700545601 /* ViewController.xib */,
+				3CDC0EF51788CFAD00545601 /* UpdateLabelViewController.h */,
+				3CDC0EF61788CFAD00545601 /* UpdateLabelViewController.m */,
+				3CDC0ECB1788B9F700545601 /* Supporting Files */,
+			);
+			path = NSDisplayLinkUpdateLoopDemo;
+			sourceTree = "<group>";
+		};
+		3CDC0ECB1788B9F700545601 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3CDC0ECC1788B9F700545601 /* NSDisplayLinkUpdateLoopDemo-Info.plist */,
+				3CDC0ECD1788B9F700545601 /* InfoPlist.strings */,
+				3CDC0ED01788B9F700545601 /* main.m */,
+				3CDC0ED21788B9F700545601 /* NSDisplayLinkUpdateLoopDemo-Prefix.pch */,
+				3CDC0ED61788B9F700545601 /* Default.png */,
+				3CDC0ED81788B9F700545601 /* Default@2x.png */,
+				3CDC0EDA1788B9F700545601 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3CDC0EEA1788BA2200545601 /* NSDisplayLinkUpdateLoop */ = {
+			isa = PBXGroup;
+			children = (
+				3CDC0EEB1788BA3100545601 /* NSDisplayLinkUpdateLoop.h */,
+				3CDC0EEC1788BA3100545601 /* NSDisplayLinkUpdateLoop.m */,
+			);
+			name = NSDisplayLinkUpdateLoop;
+			path = ../NSDisplayLinkUpdateLoop;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3CDC0EC01788B9F700545601 /* NSDisplayLinkUpdateLoopDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CDC0EE71788B9F700545601 /* Build configuration list for PBXNativeTarget "NSDisplayLinkUpdateLoopDemo" */;
+			buildPhases = (
+				3CDC0EBD1788B9F700545601 /* Sources */,
+				3CDC0EBE1788B9F700545601 /* Frameworks */,
+				3CDC0EBF1788B9F700545601 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NSDisplayLinkUpdateLoopDemo;
+			productName = NSUpdateLoopDemo;
+			productReference = 3CDC0EC11788B9F700545601 /* NSDisplayLinkUpdateLoopDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3CDC0EB91788B9F700545601 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Adorkable;
+			};
+			buildConfigurationList = 3CDC0EBC1788B9F700545601 /* Build configuration list for PBXProject "NSDisplayLinkUpdateLoop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3CDC0EB81788B9F700545601;
+			productRefGroup = 3CDC0EC21788B9F700545601 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CDC0EC01788B9F700545601 /* NSDisplayLinkUpdateLoopDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3CDC0EBF1788B9F700545601 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CDC0ECF1788B9F700545601 /* InfoPlist.strings in Resources */,
+				3CDC0ED71788B9F700545601 /* Default.png in Resources */,
+				3CDC0ED91788B9F700545601 /* Default@2x.png in Resources */,
+				3CDC0EDB1788B9F700545601 /* Default-568h@2x.png in Resources */,
+				3CDC0EE11788B9F700545601 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CDC0EBD1788B9F700545601 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CDC0ED11788B9F700545601 /* main.m in Sources */,
+				3CDC0ED51788B9F700545601 /* AppDelegate.m in Sources */,
+				3CDC0EDE1788B9F700545601 /* ViewController.m in Sources */,
+				3CDC0EED1788BA3100545601 /* NSDisplayLinkUpdateLoop.m in Sources */,
+				3CDC0EF71788CFAD00545601 /* UpdateLabelViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3CDC0ECD1788B9F700545601 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CDC0ECE1788B9F700545601 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3CDC0EDF1788B9F700545601 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CDC0EE01788B9F700545601 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3CDC0EE51788B9F700545601 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3CDC0EE61788B9F700545601 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3CDC0EE81788B9F700545601 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NSDisplayLinkUpdateLoopDemo/NSDisplayLinkUpdateLoopDemo-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/NSDisplayLinkUpdateLoopDemo/NSDisplayLinkUpdateLoopDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3CDC0EE91788B9F700545601 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NSDisplayLinkUpdateLoopDemo/NSDisplayLinkUpdateLoopDemo-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/NSDisplayLinkUpdateLoopDemo/NSDisplayLinkUpdateLoopDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CDC0EBC1788B9F700545601 /* Build configuration list for PBXProject "NSDisplayLinkUpdateLoop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CDC0EE51788B9F700545601 /* Debug */,
+				3CDC0EE61788B9F700545601 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CDC0EE71788B9F700545601 /* Build configuration list for PBXNativeTarget "NSDisplayLinkUpdateLoopDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CDC0EE81788B9F700545601 /* Debug */,
+				3CDC0EE91788B9F700545601 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3CDC0EB91788B9F700545601 /* Project object */;
+}
