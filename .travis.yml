@@ -1,4 +1,5 @@
 language: objective-c
+xcode_sdk: iphonesimulator
 
 before_script: travis-ci/before.sh
 script: travis-ci/script.sh
