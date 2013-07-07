@@ -8,33 +8,28 @@ To use NSDisplayLinkUpdateLoop first have your object inherit and implement the 
 
 	#include "NSDisplayLinkUpdateLoop.h"
 
-	@interface IWannaCelebrate : NSObject< NSDisplayLinkUpdateLoopDelegate >
-	{
+	@interface IWannaUpdate : NSObject< NSDisplayLinkUpdateLoopDelegate >
+  ...
 
-	}
-	@end
-
-	...
-
-	@implementation IWannaCelebrate
+	@implementation IWannaUpdate
 	-( void )update:( NSTimeInterval )deltaTime
 	{
-		[ self oneMoreTime:deltaTime ];
+    ...
 	}
 
 Next instantiate an NSDisplayLinkUpdateLoop and have your object subscribe
 
 	-( void )startUpdates
 	{
-		IWannaCelebrate* celebration = [ [ IWannaCelebrate alloc ] init ];
+		IWannaUpdate* updateMe = [ [ IWannaUpdate alloc ] init ];
 
 		updateLoop = [ [ NSDisplayLinkUpdateLoop alloc ] init ];
-    	*[ updateLoop subscribe:celebration ]*;	
+    [ updateLoop subscribe:updateMe ];
 	}
 
 To stop receiving update calls
 
-	*[ updateLoop unsubscribe:celebration ]*
+	[ updateLoop unsubscribe:updateMe ];
 
 Easy!
 
