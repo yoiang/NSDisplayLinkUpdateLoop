@@ -15,6 +15,7 @@
 {
     @private
     CADisplayLink* displayLink;
+    BOOL started;
     NSTimeInterval lastUpdateTime;
 
     NSMutableArray* subscribers;
@@ -31,16 +32,34 @@
     self = [ super init ];
     if ( self )
     {
+        started = NO;
+        displayLink = [ [ CADisplayLink displayLinkWithTarget:self selector:@selector( update ) ] retain ];
         @synchronized( subscribers )
         {
             subscribers = [ [ NSMutableArray alloc ] init ];
         }
-        displayLink = [ [ CADisplayLink displayLinkWithTarget:self selector:@selector( update ) ] retain ];
-        [ displayLink addToRunLoop:[ NSRunLoop currentRunLoop ] forMode:NSDefaultRunLoopMode ];
-        lastUpdateTime = [ [ NSDate date ] timeIntervalSinceReferenceDate ];
     }
     
     return self;
+}
+
+-( void )start
+{
+    if ( !started )
+    {
+        started = YES;
+        [ displayLink addToRunLoop:[ NSRunLoop currentRunLoop ] forMode:NSDefaultRunLoopMode ];
+        lastUpdateTime = [ [ NSDate date ] timeIntervalSinceReferenceDate ];
+    }
+}
+
+-( void )stop
+{
+    if ( started )
+    {
+        started = NO;
+        [ displayLink removeFromRunLoop:[ NSRunLoop currentRunLoop ] forMode:NSDefaultRunLoopMode ];
+    }
 }
 
 -( void )dealloc
@@ -71,16 +90,22 @@
 
 -( void )update
 {
-    NSTimeInterval currentUpdateTime = [ [ NSDate date ] timeIntervalSinceReferenceDate ];
-    NSTimeInterval deltaTime = currentUpdateTime - lastUpdateTime;
-    lastUpdateTime = currentUpdateTime;
-    
-    @synchronized( subscribers )
+    if ( started )
     {
-        for (id< NSDisplayLinkUpdateLoopDelegate >delegate in subscribers )
+        NSTimeInterval currentUpdateTime = [ [ NSDate date ] timeIntervalSinceReferenceDate ];
+        NSTimeInterval deltaTime = currentUpdateTime - lastUpdateTime;
+        lastUpdateTime = currentUpdateTime;
+        
+        @synchronized( subscribers )
         {
-            [ delegate update:deltaTime ];
+            for (id< NSDisplayLinkUpdateLoopDelegate >delegate in subscribers )
+            {
+                [ delegate update:deltaTime ];
+            }
         }
+    } else
+    {
+        NSLog( @"Error: NSDisplayLinkUpdateLoop::update called before ::start" );
     }
 }
 @end

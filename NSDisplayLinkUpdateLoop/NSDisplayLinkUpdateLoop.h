@@ -15,6 +15,9 @@
 -( void )subscribe:( id< NSDisplayLinkUpdateLoopDelegate > )delegate;
 -( void )unsubscribe:( id< NSDisplayLinkUpdateLoopDelegate > )delegate;
 
+-( void )start;
+-( void )stop;
+
 @end
 
 @protocol NSDisplayLinkUpdateLoopDelegate <NSObject>

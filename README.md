@@ -24,12 +24,18 @@ Next instantiate an NSDisplayLinkUpdateLoop and have your object subscribe
 		IWannaUpdate* updateMe = [ [ IWannaUpdate alloc ] init ];
 
 		updateLoop = [ [ NSDisplayLinkUpdateLoop alloc ] init ];
+    [ updateLoop start ];
+
     [ updateLoop subscribe:updateMe ];
 	}
 
 To stop receiving update calls
 
 	[ updateLoop unsubscribe:updateMe ];
+
+To properly release your NSDisplayLinkUpdateLoop be sure to stop it first
+
+	[ updateLoop stop ];
 
 Easy!
 
