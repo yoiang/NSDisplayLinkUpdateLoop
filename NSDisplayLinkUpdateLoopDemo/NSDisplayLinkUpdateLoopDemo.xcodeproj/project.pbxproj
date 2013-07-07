@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		144F52FC10764252954CFBF1 /* libPods-NSDisplayLinkUpdateLoopTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FDB705BB55C48C991E44F23 /* libPods-NSDisplayLinkUpdateLoopTest.a */; };
+		3CD3B6781789573F00AC3134 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD3B6771789573F00AC3134 /* SenTestingKit.framework */; };
+		3CD3B6791789573F00AC3134 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDC0EC41788B9F700545601 /* UIKit.framework */; };
+		3CD3B67A1789573F00AC3134 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDC0EC61788B9F700545601 /* Foundation.framework */; };
+		3CD3B6801789573F00AC3134 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3CD3B67E1789573F00AC3134 /* InfoPlist.strings */; };
+		3CD3B6831789573F00AC3134 /* NSDisplayLinkUpdateLoopTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD3B6821789573F00AC3134 /* NSDisplayLinkUpdateLoopTest.m */; };
+		3CD3B68A1789640100AC3134 /* NSDisplayLinkUpdateLoop.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDC0EEC1788BA3100545601 /* NSDisplayLinkUpdateLoop.m */; };
+		3CD3B68B1789641900AC3134 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDC0EEE1788C3E800545601 /* QuartzCore.framework */; };
 		3CDC0EC51788B9F700545601 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDC0EC41788B9F700545601 /* UIKit.framework */; };
 		3CDC0EC71788B9F700545601 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDC0EC61788B9F700545601 /* Foundation.framework */; };
 		3CDC0EC91788B9F700545601 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDC0EC81788B9F700545601 /* CoreGraphics.framework */; };
@@ -24,6 +32,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2FDB705BB55C48C991E44F23 /* libPods-NSDisplayLinkUpdateLoopTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NSDisplayLinkUpdateLoopTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CD3B6761789573F00AC3134 /* NSDisplayLinkUpdateLoopTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSDisplayLinkUpdateLoopTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CD3B6771789573F00AC3134 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		3CD3B67D1789573F00AC3134 /* NSDisplayLinkUpdateLoopTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NSDisplayLinkUpdateLoopTest-Info.plist"; sourceTree = "<group>"; };
+		3CD3B67F1789573F00AC3134 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3CD3B6821789573F00AC3134 /* NSDisplayLinkUpdateLoopTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSDisplayLinkUpdateLoopTest.m; sourceTree = "<group>"; };
+		3CD3B6841789573F00AC3134 /* NSDisplayLinkUpdateLoopTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDisplayLinkUpdateLoopTest-Prefix.pch"; sourceTree = "<group>"; };
 		3CDC0EC11788B9F700545601 /* NSDisplayLinkUpdateLoopDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSDisplayLinkUpdateLoopDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CDC0EC41788B9F700545601 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3CDC0EC61788B9F700545601 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -47,9 +62,22 @@
 		3CDC0EF21788C47000545601 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		3CDC0EF51788CFAD00545601 /* UpdateLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateLabelViewController.h; sourceTree = "<group>"; };
 		3CDC0EF61788CFAD00545601 /* UpdateLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateLabelViewController.m; sourceTree = "<group>"; };
+		81EB9EC471314BE0974BECF1 /* ../Pods/Pods-NSDisplayLinkUpdateLoopTest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "../Pods/Pods-NSDisplayLinkUpdateLoopTest.xcconfig"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3CD3B6721789573F00AC3134 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CD3B68B1789641900AC3134 /* QuartzCore.framework in Frameworks */,
+				3CD3B6781789573F00AC3134 /* SenTestingKit.framework in Frameworks */,
+				3CD3B6791789573F00AC3134 /* UIKit.framework in Frameworks */,
+				3CD3B67A1789573F00AC3134 /* Foundation.framework in Frameworks */,
+				144F52FC10764252954CFBF1 /* libPods-NSDisplayLinkUpdateLoopTest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3CDC0EBE1788B9F700545601 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -64,6 +92,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3CD3B67B1789573F00AC3134 /* NSDisplayLinkUpdateLoopTest */ = {
+			isa = PBXGroup;
+			children = (
+				3CD3B6821789573F00AC3134 /* NSDisplayLinkUpdateLoopTest.m */,
+				3CD3B67C1789573F00AC3134 /* Supporting Files */,
+			);
+			path = NSDisplayLinkUpdateLoopTest;
+			sourceTree = "<group>";
+		};
+		3CD3B67C1789573F00AC3134 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3CD3B67D1789573F00AC3134 /* NSDisplayLinkUpdateLoopTest-Info.plist */,
+				3CD3B67E1789573F00AC3134 /* InfoPlist.strings */,
+				3CD3B6841789573F00AC3134 /* NSDisplayLinkUpdateLoopTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		3CDC0EB81788B9F700545601 = {
 			isa = PBXGroup;
 			children = (
@@ -72,8 +119,10 @@
 				3CDC0EEE1788C3E800545601 /* QuartzCore.framework */,
 				3CDC0EEA1788BA2200545601 /* NSDisplayLinkUpdateLoop */,
 				3CDC0ECA1788B9F700545601 /* NSDisplayLinkUpdateLoopDemo */,
+				3CD3B67B1789573F00AC3134 /* NSDisplayLinkUpdateLoopTest */,
 				3CDC0EC31788B9F700545601 /* Frameworks */,
 				3CDC0EC21788B9F700545601 /* Products */,
+				81EB9EC471314BE0974BECF1 /* ../Pods/Pods-NSDisplayLinkUpdateLoopTest.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				3CDC0EC11788B9F700545601 /* NSDisplayLinkUpdateLoopDemo.app */,
+				3CD3B6761789573F00AC3134 /* NSDisplayLinkUpdateLoopTest.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,6 +141,8 @@
 				3CDC0EC41788B9F700545601 /* UIKit.framework */,
 				3CDC0EC61788B9F700545601 /* Foundation.framework */,
 				3CDC0EC81788B9F700545601 /* CoreGraphics.framework */,
+				3CD3B6771789573F00AC3134 /* SenTestingKit.framework */,
+				2FDB705BB55C48C991E44F23 /* libPods-NSDisplayLinkUpdateLoopTest.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -137,6 +189,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3CD3B6751789573F00AC3134 /* NSDisplayLinkUpdateLoopTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CD3B6871789573F00AC3134 /* Build configuration list for PBXNativeTarget "NSDisplayLinkUpdateLoopTest" */;
+			buildPhases = (
+				E263DC2C39F84D1585A2577B /* Check Pods Manifest.lock */,
+				3CD3B6711789573F00AC3134 /* Sources */,
+				3CD3B6721789573F00AC3134 /* Frameworks */,
+				3CD3B6731789573F00AC3134 /* Resources */,
+				3CD3B6741789573F00AC3134 /* ShellScript */,
+				1DBC8394514C4E84AB53CA7F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NSDisplayLinkUpdateLoopTest;
+			productName = NSDisplayLinkUpdateLoopTest;
+			productReference = 3CD3B6761789573F00AC3134 /* NSDisplayLinkUpdateLoopTest.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		3CDC0EC01788B9F700545601 /* NSDisplayLinkUpdateLoopDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3CDC0EE71788B9F700545601 /* Build configuration list for PBXNativeTarget "NSDisplayLinkUpdateLoopDemo" */;
@@ -176,11 +248,20 @@
 			projectRoot = "";
 			targets = (
 				3CDC0EC01788B9F700545601 /* NSDisplayLinkUpdateLoopDemo */,
+				3CD3B6751789573F00AC3134 /* NSDisplayLinkUpdateLoopTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3CD3B6731789573F00AC3134 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CD3B6801789573F00AC3134 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3CDC0EBF1788B9F700545601 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -195,7 +276,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1DBC8394514C4E84AB53CA7F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Pods-NSDisplayLinkUpdateLoopTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3CD3B6741789573F00AC3134 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		E263DC2C39F84D1585A2577B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		3CD3B6711789573F00AC3134 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CD3B6831789573F00AC3134 /* NSDisplayLinkUpdateLoopTest.m in Sources */,
+				3CD3B68A1789640100AC3134 /* NSDisplayLinkUpdateLoop.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3CDC0EBD1788B9F700545601 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -211,6 +347,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		3CD3B67E1789573F00AC3134 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CD3B67F1789573F00AC3134 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		3CDC0ECD1788B9F700545601 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -230,6 +374,30 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3CD3B6851789573F00AC3134 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81EB9EC471314BE0974BECF1 /* ../Pods/Pods-NSDisplayLinkUpdateLoopTest.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NSDisplayLinkUpdateLoopTest/NSDisplayLinkUpdateLoopTest-Prefix.pch";
+				INFOPLIST_FILE = "NSDisplayLinkUpdateLoopTest/NSDisplayLinkUpdateLoopTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		3CD3B6861789573F00AC3134 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81EB9EC471314BE0974BECF1 /* ../Pods/Pods-NSDisplayLinkUpdateLoopTest.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NSDisplayLinkUpdateLoopTest/NSDisplayLinkUpdateLoopTest-Prefix.pch";
+				INFOPLIST_FILE = "NSDisplayLinkUpdateLoopTest/NSDisplayLinkUpdateLoopTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		3CDC0EE51788B9F700545601 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -311,6 +479,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3CD3B6871789573F00AC3134 /* Build configuration list for PBXNativeTarget "NSDisplayLinkUpdateLoopTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CD3B6851789573F00AC3134 /* Debug */,
+				3CD3B6861789573F00AC3134 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3CDC0EBC1788B9F700545601 /* Build configuration list for PBXProject "NSDisplayLinkUpdateLoopDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
