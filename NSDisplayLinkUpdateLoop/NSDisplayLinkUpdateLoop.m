@@ -49,6 +49,7 @@
     [ super dealloc ];
 }
 
+// TODO: path through subscribe and unsubscribe to reduce blocking
 -( void )subscribe:( id< NSDisplayLinkUpdateLoopDelegate > )delegate
 {
     @synchronized( subscribers )
@@ -74,9 +75,12 @@
     NSTimeInterval deltaTime = currentUpdateTime - lastUpdateTime;
     lastUpdateTime = currentUpdateTime;
     
-    for (id< NSDisplayLinkUpdateLoopDelegate >delegate in subscribers )
+    @synchronized( subscribers )
     {
-        [ delegate update:deltaTime ];
+        for (id< NSDisplayLinkUpdateLoopDelegate >delegate in subscribers )
+        {
+            [ delegate update:deltaTime ];
+        }
     }
 }
 @end
