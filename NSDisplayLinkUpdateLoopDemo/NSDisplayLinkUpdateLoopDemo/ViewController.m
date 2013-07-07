@@ -40,6 +40,7 @@
 -( void )setupForIndividualUpdate
 {
     NSDisplayLinkUpdateLoop* setUpdateLoop = [ [ NSDisplayLinkUpdateLoop alloc  ] init ];
+    [ setUpdateLoop start ];
     
     for (UpdateLabelViewController* labelController in updateLines)
     {
@@ -52,6 +53,8 @@
 -( void )setupForMainViewControllerUpdate
 {
     updateLoop = [ [ NSDisplayLinkUpdateLoop alloc ] init ];
+
+    [ updateLoop start ];
     [ updateLoop subscribe:self ];
 }
 
