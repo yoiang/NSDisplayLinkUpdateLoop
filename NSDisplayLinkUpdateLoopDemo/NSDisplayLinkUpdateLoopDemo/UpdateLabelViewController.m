@@ -71,9 +71,8 @@
 -( void )setUpdateLoop:( NSDisplayLinkUpdateLoop* )updateLoop
 {
     [ privateUpdateLoop unsubscribe:self ];
-    [ privateUpdateLoop release ];
     
-    privateUpdateLoop = [ updateLoop retain ];
+    privateUpdateLoop = updateLoop;
     [ privateUpdateLoop subscribe:self ];
 }
 

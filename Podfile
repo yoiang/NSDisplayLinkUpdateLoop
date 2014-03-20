@@ -1,6 +1,5 @@
 platform :ios, '5.0'
 xcodeproj 'NSDisplayLinkUpdateLoopDemo/NSDisplayLinkUpdateLoopDemo.xcodeproj'
-requires_arc = false
 
 target :NSDisplayLinkUpdateLoopTest_ScreenAvailable do
 	pod 'Specta'

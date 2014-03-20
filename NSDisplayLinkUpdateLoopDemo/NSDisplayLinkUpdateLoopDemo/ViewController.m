@@ -31,7 +31,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 
-    updateLines = [ [ NSArray arrayWithObjects:line1, line2, line3, line4, nil ] retain ];
+    updateLines = @[line1, line2, line3, line4];
     
 //    [ self setupForMainViewControllerUpdate ];
     [ self setupForIndividualUpdate ];
@@ -46,8 +46,6 @@
     {
         [ labelController setUpdateLoop:setUpdateLoop ];
     }
-    
-    [ setUpdateLoop release ];
 }
 
 -( void )setupForMainViewControllerUpdate
@@ -61,11 +59,6 @@
 -( void )dealloc
 {
     [ updateLoop unsubscribe:self ];
-    [ updateLoop release ];
-
-    [ updateLines release ];
-    
-    [ super dealloc ];
 }
 
 - (void)didReceiveMemoryWarning

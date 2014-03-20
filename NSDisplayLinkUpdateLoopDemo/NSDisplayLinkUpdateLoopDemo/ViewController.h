@@ -20,9 +20,9 @@
     IBOutlet UpdateLabelViewController* line4;
 }
 
-@property(nonatomic, retain) UpdateLabelViewController* line1;
-@property(nonatomic, retain) UpdateLabelViewController* line2;
-@property(nonatomic, retain) UpdateLabelViewController* line3;
-@property(nonatomic, retain) UpdateLabelViewController* line4;
+@property(nonatomic, strong) UpdateLabelViewController* line1;
+@property(nonatomic, strong) UpdateLabelViewController* line2;
+@property(nonatomic, strong) UpdateLabelViewController* line3;
+@property(nonatomic, strong) UpdateLabelViewController* line4;
 
 @end

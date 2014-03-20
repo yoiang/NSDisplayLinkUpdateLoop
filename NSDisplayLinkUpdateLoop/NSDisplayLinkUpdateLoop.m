@@ -33,7 +33,7 @@
     if ( self )
     {
         started = NO;
-        displayLink = [ [ CADisplayLink displayLinkWithTarget:self selector:@selector( update ) ] retain ];
+        displayLink = [ CADisplayLink displayLinkWithTarget:self selector:@selector( update ) ];
         @synchronized( subscribers )
         {
             subscribers = [ [ NSMutableArray alloc ] init ];
@@ -60,12 +60,6 @@
         started = NO;
         [ displayLink removeFromRunLoop:[ NSRunLoop currentRunLoop ] forMode:NSDefaultRunLoopMode ];
     }
-}
-
--( void )dealloc
-{
-    [ subscribers release ];
-    [ super dealloc ];
 }
 
 // TODO: path through subscribe and unsubscribe to reduce blocking
