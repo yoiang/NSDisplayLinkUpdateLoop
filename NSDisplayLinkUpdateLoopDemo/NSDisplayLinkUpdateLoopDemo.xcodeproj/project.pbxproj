@@ -597,6 +597,7 @@
 		3CDC0EE81788B9F700545601 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NSDisplayLinkUpdateLoopDemo/NSDisplayLinkUpdateLoopDemo-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/NSDisplayLinkUpdateLoopDemo/NSDisplayLinkUpdateLoopDemo-Info.plist";
@@ -608,6 +609,7 @@
 		3CDC0EE91788B9F700545601 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NSDisplayLinkUpdateLoopDemo/NSDisplayLinkUpdateLoopDemo-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/NSDisplayLinkUpdateLoopDemo/NSDisplayLinkUpdateLoopDemo-Info.plist";
