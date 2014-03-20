@@ -1,5 +1,7 @@
 language: objective-c
 xcode_workspace: NSDisplayLinkUpdateLoopDemo.xcworkspace
 xcode_scheme: NSDisplayLinkUpdateLoopTest_CommandLine
-xcode_sdk: iphoneos6.1
+xcode_sdk: iphonesimulator6.1
+
 before_install: gem install cocoapods
+script: xctool -workspace NSDisplayLinkUpdateLoopDemo.xcworkspace -scheme NSDisplayLinkUpdateLoopTest_CommandLine -sdk iphonesimulator6.1 test
