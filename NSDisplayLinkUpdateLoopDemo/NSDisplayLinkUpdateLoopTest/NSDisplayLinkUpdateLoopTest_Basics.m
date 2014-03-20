@@ -8,10 +8,10 @@
 
 #import "NSDisplayLinkUpdateLoop.h"
 
-#import "Specta.h"
+#import <Specta/Specta.h>
 #define EXP_SHORTHAND
-#import "Expecta.h"
-#import "OCMock.h"
+#import <Expecta/Expecta.h>
+#import <OCMock/OCMock.h>
 
 SpecBegin( NSDisplayLinkUpdateLoop_Basics )
 

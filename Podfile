@@ -1,15 +1,16 @@
 platform :ios, '5.0'
 xcodeproj 'NSDisplayLinkUpdateLoopDemo/NSDisplayLinkUpdateLoopDemo.xcodeproj'
+requires_arc = false
 
 target :NSDisplayLinkUpdateLoopTest_ScreenAvailable do
-	pod 'Specta', '~> 0.1.9'
-	pod 'Expecta', '~> 0.2.1'
-    pod 'OCMock', '~> 2.2'
+	pod 'Specta'
+	pod 'Expecta'
+    pod 'OCMock'
 end
 
 target :NSDisplayLinkUpdateLoopTest_CommandLine do
-	pod 'Specta', '~> 0.1.9'
-	pod 'Expecta', '~> 0.2.1'
-    pod 'OCMock', '~> 2.2'
+	pod 'Specta'
+	pod 'Expecta'
+    pod 'OCMock'
 end
 
